@@ -36,13 +36,13 @@ Other examples highlight key aspects of my requirements from previous projects, 
 ### Overview of IB Portal
 The FxPro IB Portal is made for Introducing Brokers and has a bunch of important parts that make it easier to handle client referrals, keep track of commissions, and use financial products. Here's a simple overview of the main parts in the FxPro IB Portal:
 
-1. Introducing Broker Profiles: This is the main part of the portal. It has all the important details about each broker like personal info, contact details, and if they meet certain rules.
-2. Client Management: This part lets brokers look after their clients, including their registration info, how they trade, and their account status. It's like a big dashboard for watching over client activities and needs.
-3. Commission Structures: This shows the different ways brokers can earn commissions. It keeps track of commissions as they're earned, payment history, and detailed reports based on what clients do and the volumes they trade.
-4. Marketing Tools: This includes stuff for promotion, link generators, and other resources to help brokers get and keep clients. It often has banners you can change, stuff to learn from, and tools to see how well campaigns are doing.
-5. Performance Analytics: This gives detailed reports and tools to see into how clients are gotten, how much they trade, earnings from commissions, and other important performance info. It helps brokers make their strategies better and work more efficiently.
-6. Training and Support: This has learning resources, guides, and help materials to assist brokers in getting to know FxPro's products, how the platform works, and tips for growing their business.
-7. Account and Payment Settings: This lets brokers handle their account details, choose how they want to get paid, and take out commissions. It offers tools for managing money and makes sure everything runs smoothly in the portal.
+1. **_Introducing Broker Profiles_**: This is the main part of the portal. It has all the important details about each broker like personal info, contact details, and if they meet certain rules.
+2. **_Client Management_**: This part lets brokers look after their clients, including their registration info, how they trade, and their account status. It's like a big dashboard for watching over client activities and needs.
+3. **_Commission Structures_**: This shows the different ways brokers can earn commissions. It keeps track of commissions as they're earned, payment history, and detailed reports based on what clients do and the volumes they trade.
+4. **_Marketing Tools_**: This includes stuff for promotion, link generators, and other resources to help brokers get and keep clients. It often has banners you can change, stuff to learn from, and tools to see how well campaigns are doing.
+5. **_Performance Analytics_**: This gives detailed reports and tools to see into how clients are gotten, how much they trade, earnings from commissions, and other important performance info. It helps brokers make their strategies better and work more efficiently.
+6. **_Training and Support_**: This has learning resources, guides, and help materials to assist brokers in getting to know FxPro's products, how the platform works, and tips for growing their business.
+7. **_Account and Payment Settings_**: This lets brokers handle their account details, choose how they want to get paid, and take out commissions. It offers tools for managing money and makes sure everything runs smoothly in the portal.
 
 All these parts are put together to give Introducing Brokers what they need to manage client referrals well, watch their performance, and get the most out of their commissions, all while getting good support from FxPro.
 
