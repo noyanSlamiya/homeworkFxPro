@@ -1,9 +1,15 @@
 # homeworkFxPro
 Portfolio to demonstrate my business and systems analyst skills for FxPro.
-Some details of requirements were removed or changed due to NDA.
+
+The first example provides a high-level description of the FxPro trading platform's IB portal through ERD and state diagrams, along with a brief introduction to potential Java classes and methods. There may be certain domain inconsistencies, however, I need a thorough analysis of the domain's business aspects to refine and enhance the accuracy of the model.
+
+Other examples highlight key aspects of my requirements from previous projects, focusing on artifacts such as sequence diagrams, BPMN, and frontend transition maps. Some details couldn't be shared or were changed on purpose because of confidentiality agreements with companies I've worked for. But overall, the information still shows what I can do.
 
 ----------------------
 ### Table of Contents
+
+[High-level description of FxPro trading platform's IB portal](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#high-level-description-of-fxpro-trading-platforms-ib-portal)
+
 [Sequence diagram (Mobile banking and core banking system example)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#sequence-diagram-in-resctricted-webapi-access)
 
 [Frontend requirements 1 (Marketplace catalog transition map example)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#frontend-requirements-1-marketplace-catalog-transition-map-example)
@@ -13,6 +19,119 @@ Some details of requirements were removed or changed due to NDA.
 [Integration with external systems (AccessTrade leadgenerator integration according to their API documentation)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#integration-with-external-systems-accesstrade-leadgenerator-integration-according-to-their-api-documentation)
 
 -----------------------
+
+## High-level description of FxPro trading platform's IB portal
+
+### Overview of IB Portal
+The FxPro IB Portal is made for Introducing Brokers and has a bunch of important parts that make it easier to handle client referrals, keep track of commissions, and use financial products. Here's a simple overview of the main parts in the FxPro IB Portal:
+
+1. Introducing Broker Profiles: This is the main part of the portal. It has all the important details about each broker like personal info, contact details, and if they meet certain rules.
+2. Client Management: This part lets brokers look after their clients, including their registration info, how they trade, and their account status. It's like a big dashboard for watching over client activities and needs.
+3. Commission Structures: This shows the different ways brokers can earn commissions. It keeps track of commissions as they're earned, payment history, and detailed reports based on what clients do and the volumes they trade.
+4. Marketing Tools: This includes stuff for promotion, link generators, and other resources to help brokers get and keep clients. It often has banners you can change, stuff to learn from, and tools to see how well campaigns are doing.
+5. Performance Analytics: This gives detailed reports and tools to see into how clients are gotten, how much they trade, earnings from commissions, and other important performance info. It helps brokers make their strategies better and work more efficiently.
+6. Training and Support: This has learning resources, guides, and help materials to assist brokers in getting to know FxPro's products, how the platform works, and tips for growing their business.
+7. Account and Payment Settings: This lets brokers handle their account details, choose how they want to get paid, and take out commissions. It offers tools for managing money and makes sure everything runs smoothly in the portal.
+
+All these parts are put together to give Introducing Brokers what they need to manage client referrals well, watch their performance, and get the most out of their commissions, all while getting good support from FxPro.
+
+### State diagram of IB Portal
+![IBPortalStateDiagram-2024-03-17-190016](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/1dd8c8c8-353a-49d3-b929-a16930f8cf4f)
+
+### ER diagram of IB Portal, coupled with client (trader) entities and objects
+![Untitled diagram-2024-03-17-202159](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/583d4ae0-832a-4300-8d6b-b64d29d62ffb)
+
+### Examples of IB Portal Java classes and methods
+
+**IBroker Aggregate Root**
+```java
+import java.util.List;
+import java.util.UUID;
+
+public class IBroker {
+    private UUID brokerID;
+    private String name;
+    private String email;
+    private List<Client> clients;
+    private List<ProductsServices> offeredProductsServices;
+    private List<IBAccount> ibAccounts;
+
+    // Method to add a client to the broker's list
+    public void addClient(Client client) {
+        this.clients.add(client);
+    }
+
+    // Other constructors, getters, setters
+}
+```
+
+**Client Entity**
+
+```java
+import java.util.List;
+import java.util.UUID;
+
+public class Client {
+    private UUID clientID;
+    private String name;
+    private String email;
+    private UUID brokerID;
+    private List<Trade> trades;
+    private List<ClientAccount> clientAccounts;
+    private List<ProductsServices> usedProductsServices;
+
+    // Method to add a trade to the client's list
+    public void addTrade(Trade trade) {
+        this.trades.add(trade);
+    }
+
+    // Other constructors, getters, setters
+}
+```
+
+**ClientAccount Entity**
+
+```java
+import java.util.UUID;
+
+public class ClientAccount {
+    private UUID accountID;
+    private UUID clientID;
+    private String type;
+    private float balance;
+
+    // Method to update the account balance
+    public void updateBalance(float amount) {
+        this.balance += amount; // Assuming positive for deposits, negative for withdrawals
+    }
+    
+    // Other constructors, getters, and setters
+}
+```
+
+**IBAccount Entity**
+
+```java
+import java.util.UUID;
+
+public class IBAccount {
+    private UUID ibAccountID;
+    private UUID brokerID;
+    private String type;
+    private float balance;
+
+    // Method to process commission payments
+    public void processCommissionPayment(float amount) {
+        // Assuming amount is positive for incoming payments
+        this.balance += amount;
+    }
+    
+    // Other constructors, getters, and setters
+
+}
+```
+
+-------------------------
 
 ## Sequence diagram (Mobile banking and core banking system example)
 
@@ -35,14 +154,15 @@ Thus, a client's request first processed by middleware, which checks authorizati
 | restrictedUsername | customer name in CBS |
 | restrictedPassword | customer password in CBS |
 
-### Creating CBS User sequence diagram
+### Creating CBS User (sequence diagram)
 ![image](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/cac306de-0527-4281-a2f9-69ffd35d77d6)
 
-### Processing a Request in WebAPI sequence diagram
+### Processing a Request in WebAPI (sequence diagram)
 ![image](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/5115faa7-3cdc-44a0-bdde-5d62d2d76cda)
 
-### fetchRestrictedAccess() BPMN
-![image](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/a97fc292-fd62-4144-81b6-aa6a9ae88ff1)
+### fetchRestrictedAccess() (BPMN)
+![fetchAccess](https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/c7e64663-5fdf-4267-a499-6304ec42ffc7)
+
 
 ---------------------
 
@@ -64,10 +184,3 @@ Thus, a client's request first processed by middleware, which checks authorizati
 <img width="865" alt="Screenshot 2024-03-17 at 19 17 58" src="https://github.com/noyanSlamiya/homeworkFxPro/assets/130692660/910bdf11-d9ee-4204-90d5-c2023f249d1e">
 
 -------------------
-
-## Event storming example
-
--------------------
-
-## 
-
