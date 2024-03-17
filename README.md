@@ -8,7 +8,7 @@ Other examples highlight key aspects of my requirements from previous projects, 
 ----------------------
 ### Table of Contents
 
-[High-level system description of FxPro trading platform's IB portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#high-level-system-description-of-fxpro-trading-platforms-ib-portal)
+[High-level system description of FxPro trading platform's IB portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#high-level-description-of-fxpro-trading-platforms-ib-portal)
 
 * [Overview of IB Portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#overview-of-ib-portal)
 * [State diagram of IB Portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#state-diagram-of-ib-portal)
@@ -54,7 +54,7 @@ All these parts are put together to give Introducing Brokers what they need to m
 
 ### Examples of IB Portal Java classes and methods
 
-**IBroker Aggregate Root**
+**IBroker Entity**
 ```java
 import java.util.List;
 import java.util.UUID;
