@@ -1,22 +1,33 @@
 # homeworkFxPro
 Portfolio to demonstrate my business and systems analyst skills for FxPro.
 
-The first example provides a high-level description of the FxPro trading platform's IB portal through ERD and state diagrams, along with a brief introduction to potential Java classes and methods. There may be certain domain inconsistencies, however, I need a thorough analysis of the domain's business aspects to refine and enhance the accuracy of the model.
+The first example provides a high-level system description of the FxPro trading platform's IB portal through ERD and state diagrams, along with a brief introduction to potential Java classes and methods. There may be certain domain inconsistencies, however, I need a thorough analysis of the domain's business aspects to refine and enhance the accuracy of the model.
 
 Other examples highlight key aspects of my requirements from previous projects, focusing on artifacts such as sequence diagrams, BPMN, and frontend transition maps. Some details couldn't be shared or were changed on purpose because of confidentiality agreements with companies I've worked for. But overall, the information still shows what I can do.
 
 ----------------------
 ### Table of Contents
 
-[High-level description of FxPro trading platform's IB portal](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#high-level-description-of-fxpro-trading-platforms-ib-portal)
+[High-level system description of FxPro trading platform's IB portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#high-level-system-description-of-fxpro-trading-platforms-ib-portal)
 
-[Sequence diagram (Mobile banking and core banking system example)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#sequence-diagram-in-resctricted-webapi-access)
+* [Overview of IB Portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#overview-of-ib-portal)
+* [State diagram of IB Portal](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#state-diagram-of-ib-portal)
+* [ER diagram of IB Portal, coupled with client (trader) entities and objects](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#er-diagram-of-ib-portal-coupled-with-client-trader-entities-and-objects)
+* [Examples of IB Portal Java classes and methods](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#examples-of-ib-portal-java-classes-and-methods)
 
-[Frontend requirements 1 (Marketplace catalog transition map example)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#frontend-requirements-1-marketplace-catalog-transition-map-example)
+[Sequence diagram (Mobile banking and core banking system example)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#sequence-diagram-mobile-banking-and-core-banking-system-example)
 
-[Frontend requirements 2 (Borrower application form requirements example)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#frontend-requirements-2-borrower-application-form-requirements-example)
+* [Overview](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#overview)
+* [Glossary](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#glossary)
+* [Creating CBS User (sequence diagram)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#creating-cbs-user-sequence-diagram)
+* [Processing a Request in WebAPI (sequence diagram)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#processing-a-request-in-webapi-sequence-diagram)
+* [fetchRestrictedAccess() (BPMN)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#fetchrestrictedaccess-bpmn)
 
-[Integration with external systems (AccessTrade leadgenerator integration according to their API documentation)](https://github.com/noyanSlamiya/homeworkFxPro/edit/main/README.md#integration-with-external-systems-accesstrade-leadgenerator-integration-according-to-their-api-documentation)
+[Frontend requirements 1 (Marketplace catalog transition map example)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#frontend-requirements-1-marketplace-catalog-transition-map-example)
+
+[Frontend requirements 2 (Borrower application form requirements example)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#frontend-requirements-2-borrower-application-form-requirements-example)
+
+[Integration with external systems (AccessTrade leadgenerator integration according to their API documentation)](https://github.com/noyanSlamiya/homeworkFxPro?tab=readme-ov-file#integration-with-external-systems-accesstrade-leadgenerator-integration-according-to-their-api-documentation)
 
 -----------------------
 
